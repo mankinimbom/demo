@@ -1,3 +1,6 @@
  git fetch originremote: Counting objects: 7, done.remote: Compressing objects: 100% (2/2), done.remote: Total 3 (delta 0), reused 3
 (delta 0)Unpacking objects: 100% (3/3), done.From https://github.com/schacon/simplegit * [new branch]      
 serverfix    -> origin/serverfixIt’s  important  to  note  that  when  you  do  a  fetch  that  brings  down  new  remote-tracking  branches,you  don’t  automatically  have  local,  editable  copies  of  them.  In  other  words,  in  this  case,  you  don’thave a new serverfix branch—you have only an origin/serverfix pointer that you can’t modify.To merge this work into your current working branch, you can run git merge origin/serverfix. Ifyou  want  your  own  serverfix  branch  that  you  can  work  on,  you  can  base  it  off  your  remote-tracking branch:$ git checkout -b serverfix origin/serverfixBranch serverfix set up to track remote branch serverfix from origin.Switched to a new branch 'serverfix'This gives you a local branch that you can work on that starts where origin/serverfix is.Tracking BranchesChecking  out  a  local  branch  from  a  remote-tracking  branch  automatically  creates  what  is  called  a92
+
+
+testing git 
